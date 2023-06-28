@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Validation_form.css">
+    <title>Code Pen Task</title>
+</head>
+<body>
+    <div>
+        <form method="post" autocomplete="off">
+
+            <span class="head">Credentials</span><hr>
+            <label for="emailid">
+                Email:<span> *</span>
+            </label>
+            <input type="email" placeholder="someone@example.com" id="emailid" name="emailid" required>
+            <br><br>
+            
+            <label for="pass">
+                Password:<span> *</span>
+            </label>
+            <input type="password" minlength="8" maxlength="12" name="pass" id="pass"
+            placeholder="Password must be 8 to 12 character length" required>
+            <br><br>
+
+            <label for="confirmpass">
+                Confirm Password:<span> *</span>
+            </label>
+            <input type="password" minlength="8" maxlength="12" name="confirmpass"id="confirmpass"required>
+            <br><br><br>
+            
+            
+            <span class="head">Personal Data</span><hr>
+            <label for="pname">
+                Name:<span> *</span>
+            </label>
+            <input type="text" name="pname" id="pname" placeholder="John" required>
+            <br><br>
+
+            <label for="dob">
+                Date of Birth:
+            </label>
+            <input type="date" name="dob" id="dob">
+            <br><br><br>
+
+
+            <span class="head">Billing Address</span><hr>
+            <label for="Cnty">
+                Country:<span> *</span>
+            </label>
+            <select id="Cnty" name="Cnty">
+                <option value="Australia">Australia</option>
+                <option value="England">England</option>
+                <option value="China">China</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Germany">Germany</option>
+                <option value="Italy">Italy</option>
+                <option value="Netherland">Netherland</option>
+            </select><br><br>
+
+            <label for="cityname">
+                City:<span> *</span>
+            </label>
+            <input type="text" name="cityname" id="cityname" required>
+            <br><br>
+
+            <label for="addr">
+                Address:<span> *</span>
+            </label>
+            <input type="text" name="addr" id="addr" required>
+            <br><br>
+
+            <label for="cell">
+                Phone:<span> *</span>
+            </label>
+            <input type="tel" name="cell" id="cell" pattern="03[0-9]{2}-[0-9]{7}"
+            placeholder="03xx-xxxxxxx">
+            <br><br>
+            <span class="txt">Enter the Phone Number in Pakistan Format 03xx-xxxxxxx</span>
+            <br><br>
+
+            <span>
+                <input type="checkbox" required>
+                I agree to the Terms and Conditions
+            </span>
+            <br><br>
+            
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
